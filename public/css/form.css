@@ -1,0 +1,130 @@
+.form-container {
+    padding: 2rem;
+}
+
+.form-card {
+    background-color: #1f2937;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    max-width: 48rem; /* 768px */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form-grid .col-span-2 {
+        grid-column: span 2 / span 2;
+    }
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #9ca3af;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #4b5563;
+    border-radius: 0.5rem;
+    background-color: #374151;
+    color: #e5e7eb;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.5);
+}
+
+.form-file-input {
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+.form-file-input::file-selector-button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #4b5563;
+    color: #e5e7eb;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.form-file-input::file-selector-button:hover {
+    background-color: #6b7280;
+}
+
+.form-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-actions .cancel-button {
+    color: #9ca3af;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.6rem 1.25rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+.form-actions .cancel-button:hover {
+    background-color: #374151;
+}
+
+.form-actions .submit-button {
+    padding: 0.6rem 1.5rem;
+    background-color: #4f46e5;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.form-actions .submit-button:hover {
+    background-color: #4338ca;
+}
+
+.input-error {
+    color: #f87171;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.current-photo-container {
+    margin-top: 1rem;
+}
+.current-photo-container p {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-bottom: 0.5rem;
+}
+.current-photo-container img {
+    height: 6rem; /* 96px */
+    width: 6rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border: 2px solid #4b5563;
+}
